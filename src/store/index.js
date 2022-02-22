@@ -1,5 +1,6 @@
 import { createStore } from "vuex";
 import * as crates from "./modules/crates.js";
+import * as media from "./modules/media.js";
 
 export default createStore({
   state: {},
@@ -8,5 +9,6 @@ export default createStore({
   actions: {},
   modules: {
     crates,
+    media,
   },
 });

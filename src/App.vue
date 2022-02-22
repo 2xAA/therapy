@@ -1,30 +1,58 @@
 <template>
-  <nav>
+  <!-- <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
-  </nav>
+  </nav> -->
   <router-view />
 </template>
 
 <style>
+:root {
+  /*
+     "Canvas" becomes the following 👇
+     
+     Light system preferences:
+       - Chrome: #fff
+       - Safari: #fff
+     Dark system preferences: 
+       - Chrome: #000
+       - Safari: #1e1e1e
+  */
+  background-color: Canvas;
+  /* 
+     "CanvasText" becomes the following 👇
+
+     Light system preferences:
+       - Chrome: #000
+       - Safari: #000
+     Dark system preferences: 
+       - Chrome: #fff
+       - Safari: #fff
+  */
+  color: CanvasText;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+    helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
 }
 
-nav {
-  padding: 30px;
+html,
+body,
+#app {
+  height: 100%;
 }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
+body {
+  margin: 0;
+  padding: 0.5em;
+  box-sizing: border-box;
+  position: relative;
 }
 
-nav a.router-link-exact-active {
-  color: #42b983;
-}
+/* * {
+  user-select: none;
+} */
 </style>
